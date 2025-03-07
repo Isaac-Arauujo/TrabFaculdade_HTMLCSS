@@ -1,0 +1,258 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+
+}
+
+
+
+nav {
+
+    background-color: #333;
+    padding: 10px 0;
+
+}
+
+
+
+nav ul {
+
+    list-style: none;
+    padding: 0;
+
+}
+
+
+
+nav ul li {
+
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+
+}
+
+
+
+nav ul li a
+
+{
+
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    background: #444;
+    border-radius: 5px;
+
+}
+
+
+
+    nav ul li a:hover {
+
+     background-color: #555;
+
+    }
+
+
+
+    /* Submenu  */
+
+
+
+    nav ul .submenu {
+
+        display: none;
+        position: absolute;
+        background-color: #313131;
+        list-style: none;
+        top:100%;
+        left: 0;
+        width: 150px;
+        border-radius: 5px;
+
+    }
+
+
+
+    nav ul li:hover .submenu {
+
+        display: block;
+        text-align: left;
+
+    }
+
+
+    nav ul .submenu li a {
+
+        display: block;
+        padding: 10px;
+        border-radius: 0;
+
+    }
+
+    /* Tela de Login  */
+
+
+
+    .login-container {
+
+        background-color: white;
+        width: 350px;
+        margin: 80px auto;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: left;
+
+    }
+
+    .login-container h2 {
+
+        text-align: center;
+        margin-bottom: 20px;
+
+    }
+
+    .input-group {
+
+        margin-bottom: 15px;
+
+    }
+
+
+
+    .input-group label {
+
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+
+    }
+
+
+
+    .input-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+
+
+button {
+
+    width: 100%;
+    padding: 10px;
+    background-color: #be0101;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+
+}  
+.registrar-container {
+
+    background-color: white;
+    width: 350px;
+    margin: 80px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+
+}
+
+.registrar-container h2 {
+
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.input-group-registrar {
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.input-group-registrar label {
+
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+
+
+
+.input-group-registrar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+h2 {
+    font-size: 40px;
+    color: rgb(12, 12, 12);
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #222021, 0 0 40px#333435;
+    text-align: left;
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+/*  mapa */
+.map-container {
+    text-align: center; 
+    margin-top: 200px; 
+}
+
+.map-container img {
+    width: 80%; 
+    max-width: 60px; 
+    height: auto; 
+    border: 1px solid #ddd; 
+}
+
+
+iframe {
+    width: 30%; 
+    height: 400px; 
+    border: 0; 
+}
+/* contato */
+h4{
+
+    font-size: 25px;
+    color: rgb(12, 12, 12);
+    text-align: left;
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+h5{
+    font-size: 20px;
+    color: rgb(12, 12, 12);
+    text-align: left;
+    margin-top: 50px;
+    padding-top: 10px;
+    margin-left: 30px;
+    
+}

@@ -1,0 +1,102 @@
+/* Estilo para o corpo da página */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #3a3a3a; /* Fundo vermelho escuro */
+    color: white; /* Cor do texto */
+}
+
+/* Estilo para o menu de navegação */
+nav {
+    background-color: #333; /* Cor do fundo do menu */
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ffffff; /* Muda a cor para dourado quando passar o mouse */
+}
+
+/* Estilo para o conteúdo principal */
+.content {
+    margin: 40px;
+    padding: 20px;
+    background-color: rgba(110, 110, 110, 0.1); /* Fundo sutil para o conteúdo */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Sombra suave para o conteúdo */
+}
+
+/* Estilo para o título da história */
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ffffff; /* Cor dourada */
+}
+
+/* Estilo para o parágrafo da história */
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+    text-align: justify;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Estilo para o parágrafo h5 */
+h5 {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-top: 50px;
+    padding-top: 10px;
+    margin-left: 30px;
+    font-weight: 300;
+}
+
+/* Submenu */
+.submenu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+    position: absolute;
+    background-color: #444;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+nav ul li .submenu li {
+    padding: 8px;
+}
+
+nav ul li .submenu li a {
+    color: white;
+}
+
+nav ul li .submenu li a:hover {
+    color: #4b4b4b;
+}
