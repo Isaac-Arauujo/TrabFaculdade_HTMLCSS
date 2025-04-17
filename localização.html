@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Localização</title>
+    <title>Localização - VT Tattoo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,32 +11,54 @@
         <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="historia.html">História</a></li>
-            <li>
             <li><a href="localização.html">Localização</a></li>
+            <li><a href="artes.html">Artes</a></li>
             <li>
-            <li><a href="#">Artes</a></li>
-            <li>
-                <a>Cadastros</a>
+                <a>Entrar</a>
                 <ul class="submenu">
-                    <li><a href="registrar.html">Regsitrar-se</a></li>
+                    <li><a href="registrar.html">Registrar-se</a></li>
                     <li><a href="login.html">Entrar</a></li>
                 </ul>
             </li>
             <li><a href="contato.html">Contato</a></li>
         </ul>
     </nav>
-     <div class="map-container">
-        <h2>Nosso Local</h2>
+    
+    <div class="localizacao-container">
+        <h2>Encontre Nosso Estúdio</h2>
         
-        <!-- Google Maps embed -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58468.62713192736!2d-46.789036051367226!3d-23.665613800000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5103cd2fa573%3A0xb3f46e86b27d536c!2sGoth%20Ink%20Tattoo%20Sp!5e0!3m2!1spt-BR!2sbr!4v1741372321381!5m2!1spt-BR!2sbr" 
-        width="600" 
-        height="450" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+        <div class="clima-consulta">
+            <h3>Verifique o clima</h3>
+            <br><br>
+            <div class="opcoes-consulta">
+                <input type="radio" id="porCidade" name="tipoConsulta" value="cidade" checked>
+                <label for="porCidade">Por Cidade</label>
+                
+                <input type="radio" id="porCEP" name="tipoConsulta" value="cep">
+                <label for="porCEP">Por CEP</label>
+            </div>
+            <br>
+            <div id="inputCidade">
+                <input type="text" id="cityInput" placeholder="Digite o nome da cidade">
+            </div>
+            
+            <div id="inputCEP" style="display:none;">
+                <input type="text" id="cep" placeholder="Digite seu CEP (somente números)" maxlength="8">
+            </div>
+            <br>
+            <button id="weatherBtn" onclick="fetchWeather()">Consultar Clima</button>
+            
+            <div id="weatherDisplay">
+              
+            </div>
+        </div>
+        
+        <div class="mapa-estudio">
+            <h3>Nossa Localização</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14610.6576418979!2d-46.7659125317012!3d-23.723675314500042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4de621717c9d%3A0xd20757ab8e87c8f6!2sVila%20Gilda%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1744853110622!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     </div>
+    
+    <script src="localizacao.js"></script>
 </body>
 </html>
